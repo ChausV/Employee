@@ -12,17 +12,19 @@ Fink::Fink(const AbstractEmployee& e, const std::string& rpo)
 {}
 
 Fink::Fink(const Fink & e)
-    : AbstractEmployee(static_cast<const AbstractEmployee&>(e)), reports_to_(e.reports_to_)
+    : AbstractEmployee(e), reports_to_(e.reports_to_)
 {}
 
 void Fink::showAll() const
 {
+    std::cout << " --- Category: fink --- " << std::endl;
 	AbstractEmployee::showAll();
     std::cout << "Reports to: " << reports_to_ << std::endl;
 }
 
 void Fink::setAll()
 {
+    std::cout << " --- Category: fink --- " << std::endl;
 	AbstractEmployee::setAll();
     std::cout << "Enter person fink report to: ";
 	// in our case setReportsTo() does not provide any data processing

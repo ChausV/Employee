@@ -25,6 +25,7 @@ HighFink::HighFink(const HighFink& h)
 
 void HighFink::showAll() const
 {
+    std::cout << " --- Category: high fink --- " << std::endl;
 	AbstractEmployee::showAll();
     std::cout << "Subordinate employees: " << Manager::inChargeOf() << std::endl;
     std::cout << "Reports to: " << Fink::reportsTo() << std::endl;
@@ -32,6 +33,7 @@ void HighFink::showAll() const
 
 void HighFink::setAll()
 {
+    std::cout << " --- Category: high fink --- " << std::endl;
 	AbstractEmployee::setAll();
 
     std::cout << "Enter number of employees: ";

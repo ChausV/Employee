@@ -7,24 +7,24 @@ Manager::Manager(const std::string& fn, const std::string& ln,const std::string&
     : AbstractEmployee(fn, ln, j), in_charge_of_(ico)
 {}
 
-// will use automatically generated copy constructor
 Manager::Manager(const AbstractEmployee& e, int ico)
     : AbstractEmployee(e), in_charge_of_(ico)
 {}
 
-// check this
 Manager::Manager(const Manager& m)
-    : AbstractEmployee(static_cast<const AbstractEmployee&>(m)), in_charge_of_(m.in_charge_of_)
+    : AbstractEmployee(m), in_charge_of_(m.in_charge_of_)
 {}
 
 void Manager::showAll() const
 {
+    std::cout << " --- Category: manager --- " << std::endl;
 	AbstractEmployee::showAll();
     std::cout << "Subordinate employees: " << in_charge_of_ << std::endl;
 }
 
 void Manager::setAll()
 {
+    std::cout << " --- Category: manager --- " << std::endl;
 	AbstractEmployee::setAll();
     std::cout << "Enter number of employees: ";
     // very bad, but without validation and stream state checking this time

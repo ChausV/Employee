@@ -9,10 +9,12 @@ Employee::Employee(const std::string& fn, const std::string& ln, const std::stri
 
 void Employee::showAll() const
 {
+    std::cout << " --- Category: employee --- " << std::endl;
 	AbstractEmployee::showAll();
 }
 
 void Employee::setAll()
 {
+    std::cout << " --- Category: employee --- " << std::endl;
 	AbstractEmployee::setAll();
 }
