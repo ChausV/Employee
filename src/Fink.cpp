@@ -25,5 +25,7 @@ void Fink::setAll()
 {
 	AbstractEmployee::setAll();
     std::cout << "Enter person fink report to: ";
+	// in our case setReportsTo() does not provide any data processing
+	// but in general it is better to use class's getters instead of direct access
     std::getline(std::cin, reports_to_);
 }

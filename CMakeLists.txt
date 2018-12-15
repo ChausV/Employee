@@ -14,4 +14,5 @@ add_executable(${EXECUTABLE_NAME}
 	${CMAKE_CURRENT_SOURCE_DIR}/src/Employee.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/Manager.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/Fink.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/HighFink.cpp
 )
